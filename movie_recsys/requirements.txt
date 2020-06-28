@@ -1,8 +1,8 @@
+cython==0.28.2
+numpy==1.19.0
 scipy==1.1.0
 Flask==1.0.2
 nltk==3.3
 requests==2.18.4
-numpy==1.19.0
 pandas==0.23.0
 scikit_learn==0.23.1
-cython==0.28.2
