@@ -8,8 +8,8 @@ from sklearn.metrics.pairwise import cosine_similarity
 from scipy import sparse
 import numpy as np
 
-movies = pd.read_csv('C:/Users/nour_/ml-latest-small/ml-latest-small/movies.csv')
-ratings = pd.read_csv('C:/Users/nour_/ml-latest-small/ml-latest-small/ratings.csv')
+movies = pd.read_csv('movies.csv')
+ratings = pd.read_csv('ratings.csv')
 
 ratings = ratings.fillna(0)
 
