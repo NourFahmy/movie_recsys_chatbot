@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request
-from os import path
+from os import path, getenv
 import requests
 #from chatterbot import ChatBot
 #from chatterbot.trainers import ChatterBotCorpusTrainer
@@ -46,5 +46,6 @@ def update_user_preference(key, value):
 	user_ratings[key] = value
 	print(user_ratings)
 
-if __name__ == "__main__":    
-    app.run(host="0.0.0.0", port=5005, debug=True)
+if __name__ == "__main__":
+    port = int(getenv("PORT") or "5005")
+    app.run(host="0.0.0.0", port=port, debug=True)
